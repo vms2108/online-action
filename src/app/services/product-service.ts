@@ -67,4 +67,8 @@ export class ProductService {
   public getReviewsForProduct(productId: number): Review[] {
     return this.reviews.filter(r => r.productId === productId).map(r => r);
   }
+
+  public getAllCategories(): string[] {
+    return ['Books', 'Electonics', 'Hardware'];
+  }
 }

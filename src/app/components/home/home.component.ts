@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   public products: Product[] = [];
   public titleFilter = new FormControl();
-  public filterCriteria: FilterPipe;
+  public filterCriteria: string;
 
   constructor(
     private productService: ProductService,

@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './components/search/search.component';
 import { StarsComponent } from './components/stars/stars.component';
 import { FilterPipe } from './pipes/filter-pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
     ProductService,
